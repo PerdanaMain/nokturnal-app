@@ -101,14 +101,6 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="portfolio.html"
-                  className="inline-block transition hover:scale-110 hover:text-secondary"
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
                   href="services.html"
                   className="inline-block transition hover:scale-110 hover:text-secondary"
                 >
@@ -117,26 +109,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="team.html"
-                  className="inline-block transition hover:scale-110 hover:text-secondary"
-                >
-                  Team
-                </a>
-              </li>
-              <li>
-                <a
                   href="about-us.html"
                   className="inline-block transition hover:scale-110 hover:text-secondary"
                 >
                   About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="career.html"
-                  className="inline-block transition hover:scale-110 hover:text-secondary"
-                >
-                  Career
                 </a>
               </li>
             </ul>
@@ -241,21 +217,13 @@ const Footer = () => {
         <div className="container">
           <div className="flex flex-col items-center justify-between text-center font-bold dark:text-white md:flex-row">
             <div>
-              Copyright© <span className="curr-year">2022</span>
+              Copyright© <span className="curr-year">2024</span>
               <a
                 href="javascript:"
                 className="text-primary transition hover:text-secondary"
               >
-                Plurk Technologies Pvt. Ltd.
-              </a>
-            </div>
-            <div>
-              Need help? Visit the{" "}
-              <a
-                href="contact-us.html"
-                className="text-secondary transition hover:text-primary"
-              >
-                Contact Us
+                {" "}
+                Nocturnal Dev Community
               </a>
             </div>
           </div>

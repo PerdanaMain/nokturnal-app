@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
+import Image from "next/image";
+
+import project2 from "../assets/images/project-2.png";
 
 const page = () => {
   return (
@@ -838,18 +841,8 @@ const page = () => {
                   </button>
                 </div>
               </div>
-              {/* <div class="overflow-x-auto">
-                  <ul class="flex gap-8 lg:gap-10 font-bold mb-10 mt-10 lg:mt-0 w-[700px] md:w-auto">
-                      <li class="text-secondary"><button type="button">All Work</button></li>
-                      <li><button type="button" class="hover:text-secondary transition">Design</button></li>
-                      <li><button type="button" class="hover:text-secondary transition">Website</button></li>
-                      <li><button type="button" class="hover:text-secondary transition">Mobile App</button></li>
-                      <li><button type="button" class="hover:text-secondary transition">Web Application</button></li>
-                      <li><button type="button" class="hover:text-secondary transition">Ecommerce</button></li>
-                  </ul>
-              </div> */}
             </div>
-            <div className="swiper project-slider px-6">
+            <div className="swiper project-slider px-6 container">
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="relative rounded-3xl border border-transparent bg-white transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark">
@@ -857,8 +850,8 @@ const page = () => {
                       href="portfolio-detail.html"
                       className="absolute top-0 h-full w-full ltr:left-0 rtl:right-0"
                     />
-                    <img
-                      src="assets/images/project-2.png"
+                    <Image
+                      src={project2}
                       alt="project-2"
                       className="h-52 w-full rounded-t-3xl object-cover"
                     />

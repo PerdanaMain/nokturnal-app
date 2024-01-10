@@ -4,6 +4,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import logo from "../assets/images/logo.png";
+import Login from "./Login";
+import Register from "./Register";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -175,12 +177,10 @@ const Navbar = () => {
             </div>
             <ul className="flex items-center gap-5 ltr:pr-5 rtl:pl-5 ltr:lg:pl-5 ltr:lg:pr-0 rtl:lg:pr-5 rtl:lg:pl-0">
               <li>
-                <a
-                  href="#"
-                  className="flex h-5 w-5 items-center text-white hover:text-primary rtl:text-primary"
-                >
-                  <i className="fas fa-regular fa-user"></i>
-                </a>
+                <Login />
+              </li>
+              <li>
+                <Register />
               </li>
               <li>
                 <button

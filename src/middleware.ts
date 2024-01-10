@@ -1,17 +1,23 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const isAdminRoute = (pathname:string) => {
-  return pathname.startsWith("/admin");
+const isLoginRoute = (pathname:string) => {
+  return pathname.startsWith("/dashboard");
   
 }
 
 export const middleware = (req: NextRequest)=>{
+  // get access_token from cookie
+  const token = req.cookies.get("access_token");
 
+  if(token){
+    return NextResponse.redirect(new URL("/",req.url));
+  }
 
+  
 }
 
 export const config = {
   // halaman yg mau apply middleware
-  matcher:["/admin","/admin/products","/admin/orders","/admin/users","/payments/:path*", "/transactions/:path*"]
+  matcher:["/dashboard","/dashboard/:path*",]
 }

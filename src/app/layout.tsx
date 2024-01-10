@@ -8,7 +8,7 @@ import "./assets/css/style.css";
 import "./assets/css/swiper-bundle.min.css";
 
 export const metadata: Metadata = {
-  title: "Nokturnal",
+  title: "Nocturnal",
   description: "Developed By Nokturnal",
 };
 
